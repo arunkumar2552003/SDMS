@@ -1,0 +1,413 @@
+<html>
+    <head>
+        <title>STUDENT FORM</title>
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<style>
+ 
+ #bd{
+background-color:whitesmoke;
+overflow-x: hidden;
+overflow-y: hidden;
+margin-bottom:50px;
+overflow-y: scroll;
+}
+.img{
+width: 1330px;
+height: 200px;
+margin:1;
+}
+.centered {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#headli1{
+color: navy;
+height: 15%;
+padding-top: 17px;
+font-weight: 700;
+font-size: 50px;
+    text-align: center;
+    font-family:'monospace';
+}
+
+#ho{
+margin-top:50;
+color:rgb(92, 92, 92);
+  font-weight:900;
+font-size:30;
+    text-align: center;
+    font-family: san serif;
+}
+#ht{
+color:black;
+font-weight:900;
+    text-align: center;
+    font-family:  serif;
+}
+        </style>
+    </head>
+
+  <body id="bd" class="w-auto p-3 " style="background-color: #eee;">
+ <div>  
+ <div id="headli1">UNIVERSITY COLLEGE OF ENGINEERING ARNI </div>>  
+  <img src="college.jpg" alt="snow" class="img-responsive" style="width: 100%;">
+
+</div> 
+
+<div id="bone" class="p-3 mb-2 bg-info text-dark" class="shadow-lg p-3 mb-5 bg-body rounded" >
+  <h2 id="ht">STUDENT REGISTRATION FORM</h2>
+  <p><span style="color: red;">* Required Field</span></p>
+<form method="post"  autocomplete="off" name="google-sheet" action="placement.php"><div class="form-group">
+ <div class="col-auto" >
+      <label class="col-md-3 control-label text-dark" for="name">NAME </label><span style="color: red;"> * </span>
+      <input type="text" class="form-label"  placeholder="Enter name ( In CAPITAL ) (ex :MANI T) " case="upper" value="" required name="name" >
+      </div>
+  <div class="col-auto" >
+        <label class="col-md-3 control-label text-dark" for="gender">GENDER</label><span style="color: red;"> * </span>
+        <select class="form-label" required name="gender" >
+        <option value="MALE">Male</option>
+        <option value="FEMALE">Female</option>
+        <option value="OTHERS">Others</option>
+         </select>
+  </div>        
+  
+  <div class="col-auto">
+      <label class="control-label col-md-3 text-dark" for="regno" >REGISTER NUMBER </label><span style="color: red;"> * </span>
+      <input type="text" class="form-label"  name="regno" value="" min="513300000000" max="513399999999" maxlength="12"  placeholder="Register Number">
+  </div>
+  <div class="col-auto">
+      <label class="control-label col-sm-3 text-dark" for="dept">DEPARTMENT</label><span style="color: red;">* </span>
+      <select name="dept" class="form-label">
+            <option value="">Choose</option>
+            <option value="ECE">Electronics and Communication Engineering</option>
+            <option value="CSE">Computer Science and Engineering</option>
+            <option value="EEE">Electrical and Electronics Engineering</option>
+            <option value="MECH">Mechanical Engineering</option>
+      </select>
+ </div>
+
+   <div class="col-auto">
+<label class="control-label col-sm-3 text-dark" for="year">YEAR OF STUDY</label><span style="color: red;">* </span>
+<select name="year" class="control-label">
+        <option value="">Choose</option>
+        <option value="1">First Year</option>
+        <option value="2 ">Second Year </option>
+        <option value="3">Third Year</option>
+        <option value="4">Fourth Year</option> </select>
+ </select>
+</div>
+
+   <div class="col-auto">
+<label class="control-label col-sm-3 text-dark" for="sem">SEMESTER</label><span style="color: red;"> * </span>
+<select name="sem" class="form-label">
+            <option value="">Choose</option>
+        <option value="01">01</option>
+        <option value="02">02</option>
+        <option value="03">03</option>
+        <option value="04">04</option>
+        <option value="05">05</option>
+        <option value="06">06</option>
+        <option value="07">07</option>
+        <option value="08">08</option> </select>
+ </select>
+</div>
+
+
+     <div class="col-auto">
+         <label class="control-label col-md-3 text-dark" for="DOB">D.O.B</label><span style="color: red;"> * </span>
+         <input type="date" class="form-label" placeholder="YYYY/MM/DD" required name="DOB" value="">
+</div>    
+
+  <div class="col-auto">
+<label class="control-label col-md-3 text-dark" for="age" >AGE</label><span style="color: red;"> * </span>
+        <input type="number" class="form-label" required name="age" value="" min="15" max="50"    placeholder="Enter Age">
+     </div>      
+
+    <div class="col-auto">
+<label class="control-label col-md-3 text-dark" for="ADDRESS">ADDRESS</label><span style="color: red;"> * </span>
+        <textarea name="address1" class="form-label" value="" rows="3" cols="35" style="resize:none;"  placeholder="Full Address  ( In CAPITAL )"></textarea>
+       </div>
+
+ <div class="col-auto">
+     <label class="control-label col-md-3 text-dark" for="district">DISTRICT</label><span style="color: red;"> * </span>
+<select  required   name="district" class="form-label">
+   
+         <option value="">Choose</option>
+<option value="Ariyalur">Ariyalur</option>
+<option value="Chengalpattu">Chengalpattu</option>
+        <option value="Chennai">Chennai</option>
+<option value="Coimbatore">Coimbatore</option>
+<option value="Cuddalore">Cuddalore</option>
+        <option value="Dharmapuri">Dharmapuri</option>
+<option value="Dindigul">Dindigul</option>
+<option value="Erode">Erode</option>
+        <option value="Kallakurichi">Kallakurichi</option>
+<option value="Kanchipuram">Kanchipuram</option>
+        <option value="Kanyakumari">Kanyakumari</option>
+        <option value="Karur">Karur</option>
+        <option value="Krishnagiri">Krishnagiri</option>
+        <option value="Madurai">Madurai</option>
+        <option value="Nagapattinam">Nagapattinam</option>
+        <option value="Namakkal">Namakkal</option>
+<option value="Nilgiris">Nilgiris</option>
+        <option value="Perambalur">Perambalur</option>
+<option value="Pudukkottai">Pudukkottai</option>
+        <option value="Ramanathapuram">Ramanathapuram</option>
+<option value="Ranipet">Ranipet</option>
+        <option value="Salem">Salem</option>
+<option value="Sivaganga">Sivaganga</option>
+        <option value="Tenkasi">Tenkasi</option>
+<option value="Thanjavur">Thanjavur</option>
+        <option value="Theni">Theni </option>
+<option value="Thoothukudi">Thoothukudi</option>
+        <option value="Tiruchirappalli">Tiruchirappalli</option>
+<option value="Tirunelveli">Tirunelveli</option>
+        <option value="Tirupathur">Tirupathur</option>
+<option value="Tiruppur">Tiruppur</option>
+        <option value="Tiruvallur">Tiruvallur</option>
+<option value="Tiruvannamalai">Tiruvannamalai</option>
+        <option value="Tiruvarur">Tiruvarur</option>
+<option value="Vellore">Vellore</option>
+        <option value="Viluppuram">Viluppuram</option>
+<option value="Virudhunagar">Virudhunagar</option>
+          <option></option>
+      </select>
+    </div>
+       
+     
+  <div class="col-auto">
+<label class="control-label col-md-3 text-dark" for="aadhar" >AADHAR NUMBER</label><span style="color: red;"> * </span>
+        <input type="number" class="form-label" name="aadhar" value="" min="100000000000" max="999999999999"  placeholder="xxxx xxxx xxxx">
+     </div>      
+
+
+   <div class="col-auto">
+<label class="control-label text-dark col-md-3" for="CONTACT" >CONTACT NUMBER</label><span style="color: red;"> * </span>
+        <input type="number" class="form-label" name="contact1" value=""  min="6000000000" max="9999999999" placeholder="Enter Contact 1">
+     </div>
+ 
+
+     
+  <div class="col-auto">
+      <label class="control-label text-dark col-md-3" for="email">E-MAIL ID</label><span style="color: red;"> * </span>
+      <input type="email" class="form-label"  placeholder="Enter E-mail id" value="" name="email" required>
+    </div>
+ 
+
+<div class="col-auto">
+<label class="control-label text-dark col-md-3"  for="father">FATHER NAME</label><span style="color: red;"> * </span>
+<input class="form-label" type="text" placeholder="Enter Father Name"  name="fname">
+</div>
+
+
+<div class="col-auto">
+<label class="control-label text-dark col-md-3" for="mom">MOTHER NAME</label><span style="color: red;"> * </span>
+<input class="form-label" type="text" placeholder="Enter Mother Name"  name="mname">
+</div>
+
+
+<div class="col-auto" >
+<label class="control-label text-dark col-lg-3"  for="guardian">GUARDIAN NAME</label>&nbsp;&nbsp;
+<input class="form-label" type="text" placeholder="Enter Guardian Name" name="guardianname"  >
+</div>
+
+
+<div class="col-auto">
+<label class="control-label text-dark col-lg-3" for="fatheroccupation">FATHER OCCUPATION</label><span style="color: red;"> * </span>
+<input type="text" class="form-label" placeholder="Enter Father Name" required name="fatheroccupation" >
+</div>
+
+
+<div class="col-auto">
+<label for="momoccupation" class="control-label text-dark col-lg-3" >MOTHER OCCUPATION</label><span style="color: red;"> * </span>
+<input class="form-label" type="text" placeholder="Enter Mother Name" required name="motheroccupation" >
+</div>
+
+   <div class="col-auto">
+<label  for="parentcontact" class="control-label text-dark col-lg-3" >PARENT'S CONTACT NUMBER</label><span style="color: red;"> * </span>
+        <input type="number" class="form-label"  name="pcontact" value=""   min="6000000000" max="9999999999"  placeholder="Enter Father's/Mother's Contact Number">
+     </div>
+
+     <div  class="col-auto">
+       <label class="control-label text-dark col-lg-3"  for="income">PARENT'S ANNUAL INCOME</label><span style="color: red;"> * </span>
+       <input type="number" class="form-label" required name="income" value="" maxlength="10"   placeholder="parent's annual income">
+      </div>
+
+       <div class="col-auto">
+       <label class="control-label text-dark col-lg-3" for="sslc" >SSLC (10TH) %  </label><span style="color: red;"> * </span>
+       <input type="text" name="sslc" value=""  class="form-label"   placeholder="Marks in Percentage  ( no round off )">
+      </div>
+
+ <div class="col-auto">
+         <label class="control-label text-dark col-lg-3"  for="sslcd">DAY OF PASSING ( 10TH )</label><span style="color: red;"> * </span>
+         <input type="month" class="form-label" placeholder="YYYY/MM/DD" name="sslcd" value="" >
+</div> 
+
+
+   <div class="col-auto">
+       <label for="hsc" class="control-label text-dark col-lg-3">HSC (12TH) %</label><span style="color: red;"> * </span>
+       <input type="text" class="form-label" required name="hsc" value=""  placeholder="Marks in Percentage ( no round off )">
+      </div>
+
+<div class="col-auto">
+         <label class="control-label text-dark col-lg-3"  for="hscd">DAY OF PASSING ( 12TH )</label><span style="color: red;"> * </span>
+         <input type="month" class="form-label"  placeholder="YYYY/MM/DD" name="hscd" value="" >
+</div> 
+
+<div class="col-auto">
+       <label class="control-label text-dark col-lg-3" >DIPLOMA - DEPARTMENT</label>
+       <input type="text" class="form-label" name="dd" value=""  placeholder="Department Studied in Diploma">
+      </div>
+
+   <div class="col-auto">
+       <label class="control-label text-dark col-lg-3">DIPLOMA %</label>
+       <input type="text" class="form-label" name="dp" value=""  placeholder="Marks in Percentage ( no round off )">
+      </div>
+
+<div class="col-auto">
+         <label class="control-label text-dark col-lg-3" for="hscd">DAY OF PASSING ( DIPLOMA )</label>
+         <input type="month" class="form-label"  placeholder="YYYY/MM/DD" name="dda" value="" >
+</div> 
+
+<div class="col-auto">
+<label class="control-label text-dark col-lg-3"  >GPA DETAILS  </label><span style="color:red;"> [ except unfinshed semesters ] * </span>
+<div class="col-auto">
+  <div class="col-lg-3">
+    <input type="text" class="form-label" name="sem1" placeholder="SEM1 GPA" aria-label="First name">
+  </div>
+  <div class="col-auto">
+    <input type="text" class="form-label" name="sem2" placeholder="SEM2 GPA" aria-label="Last name">
+  </div>
+ <div class="col-auto">
+    <input type="text" name="sem3" class="form-label"  placeholder="SEM3 GPA" aria-label="First name">
+  </div>
+  <div class="col-auto">
+    <input type="text"  name="sem4" class="form-label" placeholder="SEM4 GPA" aria-label="Last name">
+  </div>
+ <div class="col-auto">
+    <input type="text"  name="sem5" class="form-label" placeholder="SEM5 GPA" aria-label="First name">
+  </div>
+  <div class="col-auto">
+    <input type="text"  name="sem6" class="form-label" placeholder="SEM6 GPA" aria-label="Last name">
+  </div>
+ <div class="col-auto">
+    <input type="text" class="form-label" name="sem7" placeholder="SEM7 GPA" aria-label="First name">
+  </div>
+  <div class="col-auto">
+    <input type="text"  name="sem8" class="form-label" placeholder="SEM8 GPA" aria-label="Last name">
+  </div>
+
+</div>
+</div>
+<div class="col-auto">
+<label class="control-label text-dark col-lg-3" >NUMBER OF ARREARS  </label><span style="color:red;"> [ except unfinshed semesters ] * </span>
+<div class="col-auto">
+  <div class="col">
+    <input type="number"  name="asem1" placeholder="SEM-1" aria-label="First name">
+  </div>
+  <div class="col">
+    <input type="number" name="asem2" placeholder="SEM-2" aria-label="Last name">
+  </div>
+ <div class="col">
+    <input type="number" name="asem3"  placeholder="SEM-3" aria-label="First name">
+  </div>
+  <div class="col">
+    <input type="number"  name="asem4" placeholder="SEM-4" aria-label="Last name">
+  </div>
+ <div class="col">
+    <input type="number" name="asem5" placeholder="SEM-5" aria-label="First name">
+  </div>
+  <div class="col">
+    <input type="numer"  name="asem6" placeholder="SEM-6" aria-label="Last name">
+  </div>
+ <div class="col">
+    <input type="number"  name="asem7" placeholder="SEM-7" aria-label="First name">
+  </div>
+  <div class="col">
+    <input type="number" class="form-label" name="asem8" placeholder="SEM-8" aria-label="Last name">
+  </div>
+
+</div>
+</div>
+
+
+   <div class="col-auto">
+       <label class="control-label text-dark col-lg-3" >CGPA</label><span style="color: red;"> * </span>
+       <input type="text"  class="form-label" name="cgpa" value="" required min="0" max="10"  placeholder="Enter CGPA  ( Within (1-10) )">
+      </div>
+      <div class="col-auto">
+        <label class="control-label text-dark col-lg-3" >CGPA (B.E) %</label><span style="color: red;"> * </span>
+        <input type="text" class="form-label" name="ug" value="" required placeholder="CGPA in Percentage">
+       </div>
+ 
+
+   <div class="col-auto">
+       <label class="control-label text-dark col-lg-3 " >BREAK OF STUDY</label><span style="color: red;"> * </span>
+       <input type="text" class="form-label" name="bos" value="" required  placeholder="YES / NO ( In CAPITAL )">
+      </div>
+
+  <div class="col-auto">
+       <label class="control-label text-dark col-lg-3" >IF YES DETAILS</label><span style="color: red;"> * </span>
+       <input type="text" class="form-label"  name="iyd" value=""  placeholder="Enter Details ( In CAPITAL )">
+      </div>
+
+ <div class="col-auto">
+       <label class="control-label text-dark col-lg-3" >HOSTELLER / DAYS SCHOLAR</label><span style="color: red;"> * </span>
+       <input type="text" class="form-label" name="hord" value=""  placeholder="hosteller / days scholar ( In CAPITAL )">
+      </div>
+
+<div class="col-auto">
+<label class="control-label text-dark col-lg-3" for="pd">PHYSICALLY DISABLED</label><span style="color: red;"> * </span>
+<select name="physical">
+            <option value="">Choose</option>
+      <option value="YES">YES</option>
+        <option value="NO">NO </option>
+     </select>
+</div>
+
+<div class="col-auto">
+<label class="control-label text-dark col-lg-3" for="fg">FIRST GRADUATE</label><span style="color: red;"> * </span>
+<select name="fg" required class="form-label">
+            <option value="">Choose Yes / No</option>
+      <option value="YES">YES</option>
+        <option value="NO">NO </option>
+     </select>
+</div>
+
+<div class="col-auto">
+<label class=" control-label text-dark col-lg-3" for="fg">ARE YOU NEED PLACEMENT TRAINING? </label><span style="color: red;"> * </span>
+<select name="need" class="form-label">
+            <option value="">Choose Yes / No</option>
+      <option value="YES">YES</option>
+        <option value="NO">NO </option>
+     </select>
+</div>
+
+<br>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="true" required id="flexCheckDefault">
+  <label class="form-check-label" for="flexCheckDefault"><h5 style="color:brown;font-family:arial;">
+    I hereby declare that the information provided above by me, are true to best of my knowledge</h5>
+  </label>
+</div>
+
+
+    <br> 
+ <div class="form-group">
+   <button type="submit"  onclick="placement.php" name="submit" id="submit" class="btn btn-success ">SUBMIT</button>
+     </div>
+    
+     
+</div>
+</form>
+</div>   
+
+</body>
+</html>
